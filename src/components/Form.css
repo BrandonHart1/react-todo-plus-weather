@@ -1,4 +1,18 @@
 .form__style {
-  display: flex;
-  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.todo_list_button {
+  background-color: #c0c0c0;
+  border: none;
+  color: #202020;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.select__box {
+  position: relative;
 }
