@@ -5,6 +5,7 @@ import TodoList from './components/TodoList';
 
 function App() {
   const [userInput, setUserInput] = useState('');
+  const [todo__list, setTodoList] = useState([]);
 
   return (
     <div className='App'>
