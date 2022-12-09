@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Form.css';
+
 const Form = ({ setUserInput }) => {
   const userInputHandler = (e) => {
     console.log(e.target.value);
@@ -8,7 +10,7 @@ const Form = ({ setUserInput }) => {
 
   return (
     <>
-      <form>
+      <form className='form__style'>
         <input
           onChange={userInputHandler}
           type='text'
