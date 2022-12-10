@@ -4,12 +4,13 @@
 }
 
 .todo_list_button {
-  background-color: #c0c0c0;
+  background-color: #47c456;
   border: none;
   color: #202020;
-  padding: 16px 32px;
+  font-size: 20px;
+  padding: 10px 30px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 10px 4px;
   cursor: pointer;
 }
 

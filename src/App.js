@@ -5,10 +5,10 @@ import TodoList from './components/TodoList';
 
 function App() {
   const [userInput, setUserInput] = useState('');
-  const [todo__list, setTodoList] = useState([]);
+  const [todoList, setTodoList] = useState([]);
 
   return (
-    <div className='App'>
+    <div className='container'>
       <header className='header'>
         <h1>ToDo + Weather</h1>
       </header>
