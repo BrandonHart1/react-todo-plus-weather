@@ -1,27 +1,41 @@
-.form__style {
-  min-height: 100vh;
-  background-color: #000000;
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo_list_button {
+  margin-left: 10px;
   background-color: #200e71;
   border: none;
   letter-spacing: 2px;
   color: #fff;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-decoration: none;
   margin: 10px 4px;
   cursor: pointer;
 }
 
 .select__box select {
+  margin-left: 5px;
+  text-align: center;
   position: relative;
   background-color: #200e71;
   color: #fff;
-  position: absolute;
   width: 150px;
-  height: 30px;
+  height: 38px;
   display: inline-block;
+}
+
+.todo_list_input {
+  margin-left: 10px;
+  width: 30%;
+  padding: 12px 20px;
+  border: 2px solid #200e71;
+  border-radius: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }

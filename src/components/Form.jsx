@@ -11,23 +11,21 @@ const Form = ({ setUserInput }) => {
   return (
     <>
       <form>
-        <div>
-          <input
-            className='todo_list_input'
-            onChange={userInputHandler}
-            type='text'
-          />
-          <button className='todo_list_button' type='submit'>
-            Task
-          </button>
-          <div className='select__box'>
-            {/* -------- Select which items to show -------- */}
-            <select>
-              <option value='all'>All</option>
-              <option value='complete'>Completed Tasks</option>
-              <option value='incomplete'>Incomplete Tasks</option>
-            </select>
-          </div>
+        <input
+          className='todo_list_input'
+          onChange={userInputHandler}
+          type='text'
+        />
+        <button className='todo_list_button' type='submit'>
+          Add Task
+        </button>
+        <div className='select__box'>
+          {/* -------- Select which items to show -------- */}
+          <select>
+            <option value='all'>All</option>
+            <option value='complete'>Completed Tasks</option>
+            <option value='incomplete'>Incomplete Tasks</option>
+          </select>
         </div>
       </form>
     </>
