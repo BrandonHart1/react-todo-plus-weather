@@ -1,0 +1,10 @@
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.todo-item {
+  list-style-type: none;
+}

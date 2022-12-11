@@ -4,7 +4,9 @@ import Form from './components/Form';
 import TodoList from './components/TodoList';
 
 function App() {
+  // -------- User inputs a task --------
   const [userInput, setUserInput] = useState('');
+  // -------- Array of todos --------
   const [todoList, setTodoList] = useState([]);
 
   return (
@@ -12,7 +14,12 @@ function App() {
       <header className='header'>
         <h1>ToDo + Weather</h1>
       </header>
-      <Form setUserInput={setUserInput} />
+      <Form
+        todoList={todoList}
+        setTodoList={setTodoList}
+        userInput={userInput}
+        setUserInput={setUserInput}
+      />
       <TodoList />
     </div>
   );
