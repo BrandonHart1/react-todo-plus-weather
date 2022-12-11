@@ -18,7 +18,7 @@ const Form = ({ setUserInput }) => {
             type='text'
           />
           <button className='todo_list_button' type='submit'>
-            Input
+            Task
           </button>
           <div className='select__box'>
             {/* -------- Select which items to show -------- */}
