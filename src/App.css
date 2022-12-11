@@ -12,6 +12,7 @@ header {
 
 .header h1 {
   font-size: 4.5rem;
+  text-shadow: 7px 7px #000000;
   text-align: center;
 }
 
