@@ -4,8 +4,7 @@ import './Todo.css';
 
 const Todo = ({ text, todoList, setTodoList }) => {
   // -------- Delete --------
-  const deleteHandler = (todoList) => {
-    // console.log(todoList);
+  const deleteHandler = () => {
     setTodoList(todoList.filter((element) => element.id !== todoList.id));
   };
   return (
