@@ -4,7 +4,7 @@ import './Form.css';
 
 const Form = ({ userInput, setUserInput, todoList, setTodoList }) => {
   const userInputHandler = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     setUserInput(e.target.value);
   };
 

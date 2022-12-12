@@ -2,14 +2,19 @@ import React from 'react';
 
 import './Todo.css';
 
-const Todo = () => {
+const Todo = ({ text, todoList, setTodoList }) => {
+  // -------- Delete --------
+  const deleteHandler = (todoList) => {
+    // console.log(todoList);
+    setTodoList(todoList.filter((element) => element.id !== todoList.id));
+  };
   return (
     <div className='todo'>
-      <li className='todo-item'>Testing</li>
+      <li className='todo__item'>{text}</li>
       <button className='check__btn'>
         <i className='fa fa-check'></i>
       </button>
-      <button className='trash__btn'>
+      <button onClick={deleteHandler} className='trash__btn'>
         <i className='fa fa-trash'></i>
       </button>
     </div>
