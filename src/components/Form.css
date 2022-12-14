@@ -39,3 +39,7 @@ form {
   margin: 8px 0;
   box-sizing: border-box;
 }
+
+.todo__item {
+  padding: 0rem 0.5rem;
+}

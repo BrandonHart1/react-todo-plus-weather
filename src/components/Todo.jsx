@@ -2,10 +2,10 @@ import React from 'react';
 
 import './Todo.css';
 
-const Todo = ({ text, todoList, setTodoList }) => {
+const Todo = ({ text, todo, todoList, setTodoList }) => {
   // -------- Delete --------
   const deleteHandler = () => {
-    setTodoList(todoList.filter((element) => element.id !== todoList.id));
+    setTodoList(todoList.filter((element) => element.id !== todo.id));
   };
   return (
     <div className='todo'>

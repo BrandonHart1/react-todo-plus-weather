@@ -13,7 +13,7 @@ const Form = ({ userInput, setUserInput, todoList, setTodoList }) => {
     // ----- Create an object with random id -----
     setTodoList([
       ...todoList,
-      { text: userInput, completed: false, id: Math.random() * 10000 },
+      { text: userInput, completed: false, id: Math.random() * 1000 },
     ]);
     // ----- Reset to an empty text box after user adds task -----
     setUserInput('');
@@ -23,21 +23,21 @@ const Form = ({ userInput, setUserInput, todoList, setTodoList }) => {
     <>
       <form>
         <input
+          type='text'
           value={userInput} // ----- Reset the text box after user adds task -----
           className='todo_list_input'
           onChange={userInputHandler}
-          type='text'
         />
         <button
           onClick={submitTodoListHandler}
           className='todo_list_button'
           type='submit'
         >
-          Add Task
+          Add Task {/* -------- Need to change to icon -------- */}
         </button>
         {/* -------- Select which items to show -------- */}
         <div className='select__box'>
-          <select>
+          <select name='todos' className='todo__filter'>
             <option value='all'>All</option>
             <option value='complete'>Completed Tasks</option>
             <option value='incomplete'>Incomplete Tasks</option>

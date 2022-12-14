@@ -8,12 +8,13 @@ const TodoList = ({ todoList, setTodoList }) => {
   return (
     <div className='todo__list__container'>
       <ul className='todo__list'>
-        {todoList.map((todoList) => (
+        {todoList.map((todo) => (
           <Todo
             setTodoList={setTodoList}
             todoList={todoList}
-            text={todoList.text}
-            key={todoList.id}
+            text={todo.text}
+            key={todo.id}
+            todo={todo}
           />
         ))}
       </ul>
