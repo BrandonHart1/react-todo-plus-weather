@@ -2,7 +2,13 @@ import React from 'react';
 
 import './Form.css';
 
-const Form = ({ userInput, setUserInput, todoList, setTodoList }) => {
+const Form = ({
+  userInput,
+  setUserInput,
+  todoList,
+  setTodoList,
+  setFilteredStatus,
+}) => {
   const userInputHandler = (e) => {
     // console.log(e.target.value);
     setUserInput(e.target.value);
@@ -17,6 +23,11 @@ const Form = ({ userInput, setUserInput, todoList, setTodoList }) => {
     ]);
     // ----- Reset to an empty text box after user adds task -----
     setUserInput('');
+  };
+
+  const filteredStatusHandler = (e) => {
+    // console.log(e.target.value);
+    setFilteredStatus(e.target.value);
   };
 
   return (
@@ -37,7 +48,11 @@ const Form = ({ userInput, setUserInput, todoList, setTodoList }) => {
         </button>
         {/* -------- Select which items to show -------- */}
         <div className='select__box'>
-          <select name='todos' className='todo__filter'>
+          <select
+            onChange={filteredStatusHandler}
+            name='todos'
+            className='todo__filter'
+          >
             <option value='all'>All</option>
             <option value='completed'>Completed Tasks</option>
             <option value='incomplete'>Incomplete Tasks</option>

@@ -3,12 +3,17 @@ import Todo from './Todo';
 
 import './TodoList.css';
 
-const TodoList = ({ todoList, setTodoList }) => {
+const TodoList = ({
+  todoList,
+  setTodoList,
+  filteredTodoList,
+  setFilteredTodoList,
+}) => {
   // console.log(todoList);
   return (
     <div className='todo__list__container'>
       <ul className='todo__list'>
-        {todoList.map((todo) => (
+        {filteredTodoList.map((todo) => (
           <Todo
             setTodoList={setTodoList}
             todoList={todoList}
