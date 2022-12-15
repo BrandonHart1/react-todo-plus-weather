@@ -39,7 +39,7 @@ const Form = ({ userInput, setUserInput, todoList, setTodoList }) => {
         <div className='select__box'>
           <select name='todos' className='todo__filter'>
             <option value='all'>All</option>
-            <option value='complete'>Completed Tasks</option>
+            <option value='completed'>Completed Tasks</option>
             <option value='incomplete'>Incomplete Tasks</option>
           </select>
         </div>
