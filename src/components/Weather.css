@@ -1,0 +1,7 @@
+.weather__container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+  text-align: center;
+  color: #fff;
+}

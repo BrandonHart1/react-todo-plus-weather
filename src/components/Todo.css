@@ -9,7 +9,4 @@
   list-style-type: none;
 }
 
-/* ---------- No toggling a line through when completed -------- */
-.todo__complete {
-  text-decoration: line-through;
-}
+/* ---------- Not toggling a line through when completed -------- */

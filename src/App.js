@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
+import Weather from './components/Weather';
 
 function App() {
   // -------- User inputs a task --------
@@ -14,7 +15,7 @@ function App() {
 
   const [filteredTodoList, setFilteredTodoList] = useState([]);
 
-  const weatherUrl = ``;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=greensboro&appid=4b7e73e873a4c000eb63b6ddcbfe1b49`;
 
   useEffect(() => {
     const filteredListHandler = () => {
@@ -35,6 +36,7 @@ function App() {
     };
     filteredListHandler();
   }, [todoList, filteredStatus]);
+
   // -------- Function to switch the status --------
 
   return (
@@ -54,6 +56,7 @@ function App() {
         todoList={todoList}
         setTodoList={setTodoList}
       />
+      <Weather />
     </div>
   );
 }
