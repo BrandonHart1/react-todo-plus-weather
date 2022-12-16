@@ -14,8 +14,7 @@ function App() {
 
   const [filteredTodoList, setFilteredTodoList] = useState([]);
 
-  const weatherUrl = `https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=4b7e73e873a4c000eb63b6ddcbfe1b49
-`;
+  const weatherUrl = ``;
 
   useEffect(() => {
     const filteredListHandler = () => {
