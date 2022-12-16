@@ -10,6 +10,6 @@
 }
 
 /* ---------- No toggling a line through when completed -------- */
-.complete {
+.todo__complete {
   text-decoration: line-through;
 }

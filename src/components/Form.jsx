@@ -35,6 +35,7 @@ const Form = ({
       <form>
         <input
           type='text'
+          placeholder='Enter Your Task Here'
           value={userInput} // ----- Reset the text box after user adds task -----
           className='todo_list_input'
           onChange={userInputHandler}
