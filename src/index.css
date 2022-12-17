@@ -3,9 +3,11 @@
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
+  max-width: 100%;
+  position: relative;
 
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* code {
