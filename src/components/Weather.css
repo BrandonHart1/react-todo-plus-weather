@@ -21,3 +21,9 @@ h1 {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.weather__container .search__bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

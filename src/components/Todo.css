@@ -7,6 +7,23 @@
 
 .todo__item {
   list-style-type: none;
+  min-width: 20%;
+  background-color: #200e71;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+.check__btn {
+  background-color: green;
+  color: #fff;
+  margin-left: 2px;
+}
+
+.trash__btn {
+  background-color: red;
+  color: white;
+  margin-left: 2px;
 }
 
 /* ---------- Not toggling a line through when completed -------- */

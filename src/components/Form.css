@@ -43,3 +43,12 @@ form {
 .todo__item {
   padding: 0rem 0.5rem;
 }
+
+button {
+  color: #200e71;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+  margin-bottom: 3px;
+}

@@ -23,3 +23,7 @@ header {
   position: relative;
   background: linear-gradient(to bottom, #e9f8ff, #2c6ea1);
 }
+
+.search__bar {
+  height: 2rem;
+}

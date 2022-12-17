@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Weather.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 function Weather() {
   const [data, setData] = useState({});
@@ -25,10 +25,11 @@ function Weather() {
     <div className='weather__container'>
       <div className='search__bar'>
         <input
+          className='search__bar__input'
           value={city}
           type='text'
           onChange={(e) => setCity(e.target.value)}
-          placeholder='Enter City...'
+          placeholder='Enter a City...'
         />
         <button onClick={searchCity}>Get Weather</button>
       </div>
