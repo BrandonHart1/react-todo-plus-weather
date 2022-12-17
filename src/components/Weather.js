@@ -39,10 +39,9 @@ function Weather() {
             <h2>{data.name}</h2>
           </div>
           <div className='temperature'>
-            <h3>{data.weather.temp}</h3>
+            <h1>{data.main.temp}&#x2109;</h1>
           </div>
           <div className='forecast'>
-            {/* <h2>{data.weather[0].main}</h2> */}
             <h2>{data.weather[0].description}</h2>
           </div>
         </div>
