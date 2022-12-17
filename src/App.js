@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import './App.css';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
@@ -14,8 +13,6 @@ function App() {
   const [filteredStatus, setFilteredStatus] = useState('all');
 
   const [filteredTodoList, setFilteredTodoList] = useState([]);
-
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=greensboro&appid=4b7e73e873a4c000eb63b6ddcbfe1b49`;
 
   useEffect(() => {
     const filteredListHandler = () => {

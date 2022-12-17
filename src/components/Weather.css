@@ -21,3 +21,7 @@ h1 {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.temperature {
+  color: #fff;
+}
