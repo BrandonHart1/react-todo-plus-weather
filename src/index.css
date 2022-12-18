@@ -3,6 +3,8 @@
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
+
+  /* -------- Make somewhat responsive --------  */
   max-width: 100%;
   position: relative;
 

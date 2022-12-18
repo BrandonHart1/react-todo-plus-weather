@@ -23,13 +23,18 @@ const Todo = ({ text, todo, todoList, setTodoList }) => {
   };
 
   return (
+    // -------- List of tasks --------
     <div className='todo'>
       <li className={`todo__item ${todoList.completed ? 'completed' : ''}`}>
         {text}
       </li>
+
+      {/* -------- Task completed -------- */}
       <button onClick={completedHandler} className='check__btn'>
         <i className='fa fa-check'></i>
       </button>
+
+      {/* -------- Delete task -------- */}
       <button onClick={deleteHandler} className='trash__btn'>
         <i className='fa fa-trash'></i>
       </button>
