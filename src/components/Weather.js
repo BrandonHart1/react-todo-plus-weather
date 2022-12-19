@@ -31,7 +31,9 @@ function Weather() {
           onChange={(e) => setCity(e.target.value)}
           placeholder='Enter a City...'
         />
-        <button onClick={searchCity}>Get Weather</button>
+        <button className='weather__button' onClick={searchCity}>
+          Get Weather
+        </button>
       </div>
       {/* -------- Error fix for reloading the page -------- */}
       {typeof data.main != 'undefined' ? (

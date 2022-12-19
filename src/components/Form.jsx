@@ -25,10 +25,10 @@ const Form = ({
     setUserInput('');
   };
 
-  const filteredStatusHandler = (e) => {
-    // console.log(e.target.value);
-    setFilteredStatus(e.target.value);
-  };
+  // const filteredStatusHandler = (e) => {
+  //   // console.log(e.target.value);
+  //   setFilteredStatus(e.target.value);
+  // };
 
   return (
     <>
@@ -48,7 +48,7 @@ const Form = ({
           Add Task {/* -------- Need to change to icon -------- */}
         </button>
         {/* -------- Select which items to show -------- */}
-        <div className='select__box'>
+        {/* <div className='select__box'>
           <select
             onChange={filteredStatusHandler}
             name='todos'
@@ -58,7 +58,7 @@ const Form = ({
             <option value='completed'>Completed Tasks</option>
             <option value='incomplete'>Incomplete Tasks</option>
           </select>
-        </div>
+        </div> */}
       </form>
     </>
   );
