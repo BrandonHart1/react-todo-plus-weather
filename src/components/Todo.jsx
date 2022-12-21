@@ -8,6 +8,11 @@ const Todo = ({ text, todo, todoList, setTodoList }) => {
     setTodoList(todoList.filter((element) => element.id !== todo.id));
   };
 
+  // -------- Completed task --------
+  // ****************************************************************
+  // ********** Refactor to change color for completed tasks ********
+  // ****************************************************************
+
   const completedHandler = () => {
     setTodoList(
       todoList.map((element) => {
